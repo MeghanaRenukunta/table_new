@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Table</title>
+    <style>
+        *{
+            text-align: center;
+            padding: 0;
+            background-color: rgb(227, 227, 227);
+        }
+        table {
+            border: black solid 3px;
+            border-collapse: collapse;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(180, 181, 181);
+            width: 80%;
+        }
+    
+        td,
+        th {
+            background-color: rgb(220, 220, 220);
+            border: 2px solid black;
+            padding:10px;
+            font-size: large;
+        }
+    
+        th {
+            background-color: #ababab;
+            color: #000000;
+            border-bottom: #000000 solid 3px;
+        }
+        
+        .btn{
+            font-size: larger;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 10px 62px;
+            color: black;
+            padding: 15px 30px;
+            cursor:pointer;
+        }
+        .dis{
+            padding: 20px;
+            font-size:xx-large;
+        }
+        .btn:hover{
+            background-color: rgb(75, 75, 75);
+            color:white;
+        }
+        
+
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body onload="hideTable()">
+    <div class="all">
+        <button type="button" class="btn" onClick='showTable()'>Show Table</button>
+        <button type="button" class="btn" onClick='hideTable()'>Hide Table</button>
+    </div>
+    <div class="dis">Table displays here </div>
+    <div id="dat">
+    </div>
+</body>
+</html>
